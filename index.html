@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Passeios de Barco Litoral Norte | Barra do Sahy, São Sebastião</title>
+<meta name="description" content="Passeio de barco pelas ilhas do litoral norte de SP, saindo da Barra do Sahy. Seguro, tranquilo e com guia local. Reserve pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A2630; --deep:#0B3C4A; --sea:#0E7C86; --turq:#2EC4B6; --foam:#E8F6F4;
+  --sand:#F6EEDF; --coral:#FF6B4A; --coral-d:#E4532F; --white:#fff; --muted:#4D6A72;
+  --r:22px; --shadow:0 24px 60px -24px rgba(10,38,48,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--sand);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.08;letter-spacing:-.02em;color:var(--deep)}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:92px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sea);margin-bottom:16px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--turq);border-radius:2px}
+h2{font-size:clamp(30px,4vw,44px);margin-bottom:16px}
+.lead{color:var(--muted);max-width:56ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:16px;border:0;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background .25s}
+.btn-wa{background:var(--coral);color:#fff;box-shadow:0 14px 30px -12px rgba(255,107,74,.7)}
+.btn-wa:hover{background:var(--coral-d);transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+.nav.solid{background:rgba(246,238,223,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(10,38,48,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:19px;color:#fff}
+.nav.solid .brand{color:var(--deep)}
+.brand i{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--turq),var(--sea));display:grid;place-items:center;font-style:normal;font-size:17px}
+.nav-links{display:flex;gap:28px;font-weight:500;font-size:15px;color:rgba(255,255,255,.9)}
+.nav.solid .nav-links{color:var(--ink)}
+.nav .btn{padding:11px 20px;font-size:15px}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(1200px 600px at 85% -10%,#12909a 0%,transparent 60%),linear-gradient(160deg,var(--deep),#072b36 70%);color:#fff;padding:140px 0 110px;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(38px,5.4vw,64px);margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--turq)}
+.hero p.sub{font-size:19px;color:rgba(255,255,255,.82);max-width:46ch;margin-bottom:34px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+.mini{display:flex;flex-wrap:wrap;gap:22px;font-size:15px;color:rgba(255,255,255,.85)}
+.mini span{display:flex;align-items:center;gap:8px}
+.mini b{color:#fff}
+.stars{color:#FFC94A;letter-spacing:2px}
+.hero-visual{position:relative}
+.frame{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;transform:rotate(1.2deg);border:6px solid rgba(255,255,255,.14)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;background:#fff;color:var(--ink);border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);font-size:14px;line-height:1.35}
+.badge b{display:block;font-family:'Fraunces',serif;font-size:22px;color:var(--deep)}
+.badge.a{left:-26px;bottom:48px}
+.badge.b{right:-14px;top:36px}
+.wave{position:absolute;left:0;right:0;bottom:-1px;line-height:0}
+.wave svg{width:100%;height:70px}
+
+/* strip */
+.strip{padding:0;margin-top:-1px}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border-radius:var(--r);box-shadow:var(--shadow);transform:translateY(-44px);overflow:hidden}
+.strip .it{padding:26px 22px;text-align:center;border-right:1px solid #eef1ee}
+.strip .it:last-child{border:0}
+.strip strong{display:block;font-family:'Fraunces',serif;font-size:30px;color:var(--deep)}
+.strip span{font-size:14px;color:var(--muted)}
+
+/* how */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.step{background:#fff;border-radius:var(--r);padding:30px;position:relative;box-shadow:0 10px 30px -20px rgba(10,38,48,.4)}
+.step .n{font-family:'Fraunces',serif;font-size:46px;color:var(--turq);line-height:1;margin-bottom:12px}
+.step h3{font-size:22px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:16px}
+
+/* experience */
+.exp{background:var(--deep);color:#fff}
+.exp h2{color:#fff}
+.exp .lead{color:rgba(255,255,255,.75)}
+.exp .eyebrow{color:var(--turq)}
+.gal{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:16px;margin-top:44px}
+.gal figure{border-radius:20px;overflow:hidden;position:relative}
+.gal figure:first-child{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:14px;bottom:14px;background:rgba(10,38,48,.7);backdrop-filter:blur(6px);padding:6px 14px;border-radius:999px;font-size:13px}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.perk{border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:26px;background:rgba(255,255,255,.04)}
+.perk h3{color:#fff;font-size:20px;margin-bottom:6px}
+.perk p{color:rgba(255,255,255,.72);font-size:16px}
+
+/* captain */
+.cap .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.cap .photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1/1.05}
+.cap .photo img{width:100%;height:100%;object-fit:cover}
+.cap ul{list-style:none;margin-top:22px;display:grid;gap:12px}
+.cap li{display:flex;gap:12px;align-items:flex-start}
+.cap li::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--foam);color:var(--sea);display:grid;place-items:center;font-weight:700;font-size:14px;margin-top:2px}
+
+/* reviews */
+.rev{background:var(--foam)}
+.rgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
+.card{background:#fff;border-radius:var(--r);padding:30px;box-shadow:0 10px 30px -22px rgba(10,38,48,.5)}
+.card q{display:block;font-family:'Fraunces',serif;font-size:21px;line-height:1.35;color:var(--deep);margin:10px 0 16px;quotes:none}
+.card small{color:var(--muted);font-size:14px}
+
+/* where */
+.where .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.info{display:grid;gap:16px;margin-top:26px}
+.info div{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:16px;padding:18px 20px}
+.info b{display:block;color:var(--deep)}
+.map{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);min-height:340px;background:var(--foam)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0}
+
+/* final */
+.final{background:linear-gradient(160deg,var(--sea),var(--deep));color:#fff;text-align:center;padding:96px 0}
+.final h2{color:#fff;font-size:clamp(32px,4.4vw,50px);max-width:20ch;margin-inline:auto}
+.final p{color:rgba(255,255,255,.85);margin:0 auto 32px;max-width:52ch}
+footer{background:#071f27;color:rgba(255,255,255,.65);font-size:14px;padding:30px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* floating wa */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.7);transition:transform .25s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:32px;height:32px;fill:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  section{padding:68px 0}
+  .nav-links{display:none}
+  .hero{padding:112px 0 90px}
+  .hero .grid,.cap .grid,.where .grid{grid-template-columns:1fr;gap:40px}
+  .frame{aspect-ratio:4/3;transform:none}
+  .badge.a{left:12px;bottom:-18px}.badge.b{right:12px;top:12px}
+  .strip .wrap{grid-template-columns:1fr 1fr;transform:translateY(-34px)}
+  .strip .it:nth-child(2){border-right:0}
+  .strip .it:nth-child(-n+2){border-bottom:1px solid #eef1ee}
+  .steps,.perks,.rgrid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr;grid-template-rows:220px 180px 180px}
+  .gal figure:first-child{grid-column:span 2;grid-row:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#topo"><i>⚓</i> Passeios de Barco Litoral Norte</a>
+    <nav class="nav-links">
+      <a href="#passeio">O passeio</a>
+      <a href="#dudu">Seu guia</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5512997666186?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20saber%20sobre%20o%20passeio%20de%20barco." target="_blank" rel="noopener">Reservar</a>
+  </div>
+</header>
+
+<main id="topo">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="eyebrow" style="color:var(--turq)">Barra do Sahy · São Sebastião</div>
+      <h1>As ilhas mais bonitas do litoral norte, <em>com quem leva você em segurança.</em></h1>
+      <p class="sub">Passeio de barco tranquilo, sem pressa e com guia local. Você escolhe o dia, a gente cuida do resto: água cristalina, parada para nadar e fotos que valem a viagem.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/5512997666186?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20reservar%20um%20passeio%20de%20barco." target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.4.7 4.7 1.9 6.6L3 29l7.1-2.2c1.8 1 3.8 1.5 5.9 1.5 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm6.4 17.5c-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.8-3.300-1.400-5.400-4.800-5.600-5-.2-.2-1.300-1.700-1.300-3.200s.8-2.300 1.100-2.600c.3-.3.600-.4.800-.4h.6c.2 0 .5-.1.700.5.300.600.900 2.200 1 2.400.1.200.1.400 0 .6-.1.200-.2.400-.4.600l-.5.600c-.2.200-.4.400-.2.800.2.400 1 1.600 2.100 2.600 1.400 1.200 2.600 1.600 3 1.800.4.200.6.200.8-.1.200-.3 1-1.100 1.300-1.500.3-.4.500-.3.800-.2.300.1 1.900.9 2.200 1.100.3.200.5.200.6.400.1.100.1.800-.2 1.600z"/></svg>
+          Reservar pelo WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#passeio">Ver como funciona</a>
+      </div>
+      <div class="mini">
+        <span><span class="stars">★★★★★</span> <b>5,0</b> no Google</span>
+        <span>29 avaliações</span>
+        <span>Atendimento 24 horas</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="frame"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdPYz8rEvEuTOEVV-ghlg1gqOFrO_a6-9AlYDSuSYFl7jI7dAq73pLb2Xxa5RK6yjQsr7aOdz9k-vRPgxCByveflcAaNUkqx6yptozhMUdeEwoC2IRGmHDdEjy641ehPt3h2WvHwGIsWQj-=w1400" alt="Vista aérea das ilhas do litoral norte de São Paulo"></div>
+      <div class="badge b"><b>Saída</b>Praia Barra do Sahy</div>
+      <div class="badge a"><b>5,0 ★</b>nota dos clientes no Google</div>
+    </div>
+  </div>
+  <div class="wave"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="#F6EEDF" d="M0 40c240 40 480 40 720 10s480-30 720 10v10H0z"/></svg></div>
+</section>
+
+<!-- STRIP -->
+<section class="strip">
+  <div class="wrap">
+    <div class="it"><strong>5,0</strong><span>nota no Google</span></div>
+    <div class="it"><strong>29</strong><span>avaliações reais</span></div>
+    <div class="it"><strong>24h</strong><span>para falar com a gente</span></div>
+    <div class="it"><strong>+4 h</strong><span>de passeio, sem correria</span></div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="passeio" style="padding-top:34px">
+  <div class="wrap">
+    <div class="eyebrow">Simples assim</div>
+    <h2>Do WhatsApp ao mergulho em 3 passos</h2>
+    <p class="lead">Sem formulário, sem fila e sem surpresa. Você fala direto com quem conduz o passeio.</p>
+    <div class="steps">
+      <div class="step rv"><div class="n">1</div><h3>Chame no WhatsApp</h3><p>Diga a data e quantas pessoas vão. A resposta vem de quem conhece o mar daqui.</p></div>
+      <div class="step rv"><div class="n">2</div><h3>Embarque na Barra do Sahy</h3><p>Saída tranquila, com orientação de segurança antes de zarpar. Crianças e família são bem-vindas.</p></div>
+      <div class="step rv"><div class="n">3</div><h3>Curta as ilhas</h3><p>Paradas para nadar, mergulhar e fotografar águas claras, no seu ritmo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="exp">
+  <div class="wrap">
+    <div class="eyebrow">A experiência</div>
+    <h2>Um dia no mar que você vai querer repetir</h2>
+    <p class="lead">Ilhas preservadas, água transparente e a tranquilidade de estar em boas mãos.</p>
+    <div class="gal">
+      <figure class="rv"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdPYz8rEvEuTOEVV-ghlg1gqOFrO_a6-9AlYDSuSYFl7jI7dAq73pLb2Xxa5RK6yjQsr7aOdz9k-vRPgxCByveflcAaNUkqx6yptozhMUdeEwoC2IRGmHDdEjy641ehPt3h2WvHwGIsWQj-=w1200" alt="Ilhas vistas de cima"><figcaption>As ilhas vistas de cima</figcaption></figure>
+      <figure class="rv"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RbYggn_3MoQXTu82EO0vse9jn3_N6o4qUEu4Dx8MY8suld2BcK-K6QopzFumXN95Y1LdhLeEToJv8Gjpj2y_4TTgrQHNXAliei3xrSnjyftjSwbLE4tCl_kVSCLLOtBxEZmSdegVlhigZn=w900" alt="Pedras e águas claras no litoral norte"><figcaption>Pedras e águas claras</figcaption></figure>
+      <figure class="rv"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QwsjTeQrEYUiLNxQgSAk81Fq68GFghIfrrq_TfIEqcA_m0t9TNW0GQnDGMR56D9VcdLeUFkOd3RP1tDzWsK5QQtQ5q9PE5-7e-zug_JLkgcuiMtpfh7-QHKU4PTL43Chth6smKyPe0LFk=w900" alt="Mar calmo e céu azul"><figcaption>Mar calmo, céu azul</figcaption></figure>
+      <figure class="rv"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RzfcUb2FFJquDuF0-8bIpZJGoyV-_TxguUSvNivAf9sT7AN88p8aakvoc5ypM__Mpu31t_jxiIQv7dGaPuZbgAbNCF8pVu7VH-Hj2vs1CFTb7vQb6VjgKJAuOBMYk5SxSAj-0MjhBMOUwt=w900" alt="Mata Atlântica do litoral norte"><figcaption>Mata Atlântica</figcaption></figure>
+    </div>
+    <div class="perks">
+      <div class="perk rv"><h3>Segurança em primeiro lugar</h3><p>Orientação antes de sair e atenção o tempo todo. É o que os clientes mais elogiam.</p></div>
+      <div class="perk rv"><h3>Sem pressa</h3><p>Passeios de várias horas, com tempo de sobra para nadar e aproveitar cada parada.</p></div>
+      <div class="perk rv"><h3>Atendimento de verdade</h3><p>Você conversa direto no WhatsApp, a qualquer hora, e tira todas as dúvidas antes de reservar.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPTAIN -->
+<section class="cap" id="dudu">
+  <div class="wrap grid">
+    <div class="photo rv"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TLdXsynsCC1CSF_CFEkZ_TCK2RLo-3s9OnejLugOh6tUipVSrlfV2SJ-sOv4e-WDN24lSKXauOJEzdS5Mr8NeYOP1xKbjmtYviIKACchEsyq1VZM7ox1pHrkxkXHCtKjD5RjRHXeS0rwvV=w1000" alt="Barco entre as pedras no litoral norte"></div>
+    <div class="rv">
+      <div class="eyebrow">Seu guia no mar</div>
+      <h2>Conheça o Dudu, barqueiro e guia local</h2>
+      <p class="lead">Quem já foi com ele repete a mesma palavra: atencioso. É o Dudu quem conduz o barco, explica a região e cuida de todo mundo a bordo.</p>
+      <ul>
+        <li>Pontual e profissional, do embarque ao desembarque</li>
+        <li>Acompanha os mergulhos e nados de perto</li>
+        <li>Conhece as ilhas e os melhores pontos do litoral norte</li>
+      </ul>
+      <div style="margin-top:32px"><a class="btn btn-wa" href="https://wa.me/5512997666186?text=Ol%C3%A1!%20Quero%20fazer%20um%20passeio%20com%20o%20Dudu." target="_blank" rel="noopener">Falar com o Dudu</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="rev" id="avaliacoes">
+  <div class="wrap">
+    <div class="eyebrow">Quem foi, recomenda</div>
+    <h2>5,0 no Google, com 29 avaliações</h2>
+    <p class="lead">Comentários reais de clientes sobre o passeio.</p>
+    <div class="rgrid">
+      <div class="card rv"><span class="stars">★★★★★</span><q>Dudu é fantástico e muito atencioso! Fizemos o passeio de barco com muita segurança!</q><small>Ana Karina O. · Google</small></div>
+      <div class="card rv"><span class="stars">★★★★★</span><q>Barqueiro e guia turístico excelente! Atencioso, pontual e super profissional.</q><small>Rafael O. · Google</small></div>
+      <div class="card rv"><span class="stars">★★★★★</span><q>Experiência tranquila e segura, recomendo!</q><small>Gabriel S. · Google</small></div>
+      <div class="card rv"><span class="stars">★★★★★</span><q>Melhor passeio de barco do litoral.</q><small>Mariana T. G. · Google</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE -->
+<section class="where" id="onde">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="eyebrow">Onde estamos</div>
+      <h2>Saída na Praia Barra do Sahy</h2>
+      <p class="lead">Fácil de chegar, em São Sebastião. Chame no WhatsApp que a gente combina o ponto de encontro.</p>
+      <div class="info">
+        <div><span>📍</span><p><b>Endereço</b>R. Célia Tavares dos Santos, Praia Barra do Sahy, São Sebastião, SP</p></div>
+        <div><span>🕒</span><p><b>Atendimento</b>Aberto 24 horas</p></div>
+        <div><span>💬</span><p><b>WhatsApp</b>(12) 99766-6186</p></div>
+      </div>
+    </div>
+    <div class="map rv"><iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=-23.7764757,-45.6936457&z=15&output=embed"></iframe></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap rv">
+    <h2>Seu passeio pelas ilhas começa com uma mensagem</h2>
+    <p>Diga a data e quantas pessoas vão. Em poucos minutos você sabe como reservar.</p>
+    <a class="btn btn-wa" href="https://wa.me/5512997666186?text=Ol%C3%A1!%20Quero%20reservar%20um%20passeio%20de%20barco." target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© Passeios de Barco Litoral Norte · Praia Barra do Sahy, São Sebastião, SP</span><span>(12) 99766-6186</span></div>
+</footer>
+
+<a class="fab" href="https://wa.me/5512997666186" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.400 8.600 3.400 15.500c0 2.400.7 4.700 1.900 6.600L3 29l7.100-2.200c1.800 1 3.800 1.500 5.900 1.500 7 0 12.600-5.600 12.600-12.500S23 3 16 3zm6.400 17.500c-.3.800-1.600 1.500-2.200 1.600-.6.100-1.300.1-2.100-.1-.5-.2-1.100-.4-1.900-.8-3.300-1.400-5.400-4.800-5.600-5-.2-.2-1.300-1.700-1.300-3.200s.8-2.300 1.100-2.600c.3-.3.600-.4.800-.4h.6c.2 0 .5-.1.700.5.300.6.900 2.200 1 2.400.1.200.1.400 0 .6-.1.200-.2.400-.4.600l-.5.600c-.2.200-.4.400-.2.800.2.400 1 1.600 2.100 2.600 1.400 1.200 2.600 1.600 3 1.800.4.200.6.200.8-.1.200-.3 1-1.100 1.300-1.500.3-.4.500-.3.800-.2.300.1 1.900.9 2.200 1.100.3.200.5.200.6.400.1.100.1.800-.2 1.600z"/></svg>
+</a>
+
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('solid',window.scrollY>40);
+onScroll();addEventListener('scroll',onScroll,{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+</script>
+</body>
+</html>
